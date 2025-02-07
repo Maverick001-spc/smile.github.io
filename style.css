@@ -36,8 +36,11 @@ h1, p {
     cursor: pointer;
     font-size: 1.2rem;
     margin-top: 20px;
-    position: relative;
-    z-index: 11; /* Ensures button stays above the canvas */
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20; /* Ensures button stays on top */
 }
 
 .button:hover {
@@ -51,5 +54,6 @@ canvas {
     left: 0;
     width: 100%;
     height: 100%;
+    pointer-events: none; /* Ensures canvas does not block button clicks */
     z-index: 5; /* Moves canvas below the button */
 }
