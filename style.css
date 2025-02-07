@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+.container {
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+}
+h1 {
+    font-size: 2.5rem;
+}
+p {
+    font-size: 1.2rem;
+}
+.button {
+    background: #ff4b5c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
